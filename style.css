@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    display: grid;
+    row-gap: 40px;
+}
+
+.container {
+    justify-self: center;
+    max-width: 80%;
+}
+
+.section-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+}
+
+.card:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.card:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card {
+    padding: 30px 20px;
+    color: #ffffffbf;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    overflow: auto;
+}
+
+.card:hover {
+    box-shadow: -5px 0px 15px #333;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+.card-one {
+    background-color: #e38826;
+}
+
+.card-tow {
+    background-color: #006970;
+}
+
+.card-three {
+    background-color: #004241;
+}
+
+.icon-card {
+    max-width: 50px
+}
+
+.header-card {
+    font-family: 'Big Shoulders Display', san-serif;
+    color: #f2f2f2;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.description-card {
+    font-family: 'Lexend Deca Display', sans-serif;
+    line-height: 1.5;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.btn-card {
+    font-family: 'Lexend Deca Display', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    padding: 8px 18px;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+
+.btn-card-one {
+    color: #e38826;
+}
+
+.btn-card-one:hover {
+    color: #f2f2f2;
+    background-color: #e38826;
+    box-shadow: 0 0 0 1.5px #f2f2f2;
+    transition: 0.4s;
+}
+
+.btn-card-tow {
+    color: #006970;
+}
+
+.btn-card-tow:hover {
+    color: #f2f2f2;
+    background-color: #006970;
+    box-shadow: 0 0 0 1.5px #f2f2f2;
+    transition: 0.4s;
+}
+
+.btn-card-three {
+    color: #004241;
+}
+
+.btn-card-three:hover {
+    color: #f2f2f2;
+    background-color: #004241;
+    box-shadow: 0 0 0 1.5px #f2f2f2;
+    transition: 0.4s;
+}
+
+@media (max-width: 700px) {
+    .section-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card:hover {
+        box-shadow: 0 0 0;
+    }
+
+    .card:first-child {
+        border-radius: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .card:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
